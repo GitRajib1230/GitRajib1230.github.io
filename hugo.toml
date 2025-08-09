@@ -1,0 +1,62 @@
+baseURL = "https://gitrajib1230.github.io/"
+title = "Md Rajib Hossain | Portfolio"
+theme = "PaperMod"
+languageCode = "en"
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+
+# Sections shown on home
+mainSections = ["projects", "posts"]
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  description = "Projects in Data, AI/ML, Analytics, and Banking."
+  author = "Md Rajib Hossain"
+  DateFormat = "02 Jan 2006"
+
+[params.homeInfoParams]
+  Title = "Md Rajib Hossain"
+  Content = "🎓 Business Analyst | 📊 Business Informatics Tutor | 🤖 AI Explorer | 🏦 Ex-Banker"
+
+  [[params.homeInfoParams.buttons]]
+    name = "View Projects"
+    url  = "/projects/"
+
+  [[params.homeInfoParams.buttons]]
+    name = "About"
+    url  = "/about/"
+
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/GitRajib1230"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/md-rajib-hossain-01527a45/"  # update if needed
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hossainrajibmd@gmail.com"                           # update
+
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[permalinks]
+  projects = "/projects/:slug/"
+  posts    = "/posts/:year/:month/:slug/"
